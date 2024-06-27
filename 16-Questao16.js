@@ -6,24 +6,8 @@
 //Calcule quantos dias de vida um fumante perderá e exiba o total em dias.
 
 
-let qtdCigFumados = parseInt(prompt("Digite a quantidae de cigarros fumados por dia"));
-let qtdAnosFumando = parseInt(prompt("Digite a quantidade de anos fumando"));
+let cigarrosFumados = parseInt(prompt("Digite a quantidae de cigarros fumados por dia"));
+let qtd_anosFumando = parseInt(prompt("Digite a quantidade de anos fumando"));
 
-let convAnosDias = qtdAnosFumando*365;
-
-
-/*
-
-Debugando questão :
-anos fumando : 10;
-converter anos para dias : 10*365 = 3650;
-
- Quantos cigarro fumo por dia?  20;
-Totalizando 73.000 cigarros fumados por dia.
-
-Se eu fumo 20 cigarros por dia perco 12,000 segundos.
-para achar a quantidade em dias preciso multiplicar 12,000 segundos  pela quantidade de minutos de um dia 
-*/
-
-
-/*Tentar depois , não consegui :( */
+let diasPerdidos = (qtd_anosFumando*365*cigarrosFumados*10)/1440;
+console.log(`Você perdeu ${diasPerdidos.toFixed(0)} de vida`)
