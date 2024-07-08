@@ -27,6 +27,7 @@ while(i<=5){
     if(sexo ==="feminino" || sexo==="Feminino" && idade>20){
         contaF20+=1;
     }
+    i++
 }
 
 mediaIdadeG = somaIdade/5;
